@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), AsyncResponse
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //lambda pga functional interface (dvs kun en funktion, derved kan den erstattes af en anonym funktion uden risiko for tvetydighed
         submitButton.setOnClickListener({submitButton ->
             val nw = Networker(this)
             nw.execute()
